@@ -1,0 +1,94 @@
+.page1 {
+	text-align: center;
+	font-size: 1.8vw;
+
+	input {
+		width: 2.6vw;
+		padding: .2vw;
+		font-size: 1.5vw;
+	}
+
+	button {
+		display: block;
+		margin: 3vw auto;
+	}
+	.hint {
+		border: {
+			radius: 5px;
+			color: #555;
+			style: solid;
+			width: 1px;
+		}
+		font-size: 1vw;
+		width:10vw;
+		padding: .5vw;
+		background-color: #eee;
+		color: #555;
+		display: inline-block;
+	}
+
+	.invisible {
+		display: none;
+	}
+
+
+
+
+}
+
+
+.container-center {
+	margin: auto;
+
+	.rows {
+		text-align: center;
+		width: 60vw;
+		margin: auto;
+	}
+}
+
+.element {
+	display: inline-block;
+	border-radius: 50px;
+	border: 1px solid #555;
+	color: #555;
+	width: 2.7vw;
+	height: 2.7vw;
+	line-height: 2.7vw;
+	text-align: center;
+	margin: 1vw .3vw;
+}
+
+@function bin-pow($exp) {
+	$pow : 1;
+	@for $i from 0 to $exp {
+		$pow : $pow*2;
+	}
+	@return $pow;
+}
+
+.spot {
+	display: inline-block;
+	text-align: center;
+}
+
+
+@for $i from 0 through 4 {
+	.row-#{$i} {
+		text-align: left;
+		margin: 2vw auto;
+
+		.spot {
+			$width: 1 / bin-pow($i);
+			width: percentage($width);
+		}
+	}
+}
+
+connection {
+		z-index: -1;
+		border: 3px solid;
+		border-radius: 100%;
+		color: rgb(128, 128, 128);
+		color: rgba(0, 0, 0, 0.5);
+	}
