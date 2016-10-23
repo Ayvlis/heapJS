@@ -1,16 +1,31 @@
+body {
+  font-family: sans-serif;
+}
+
 .page1 {
 	text-align: center;
 	font-size: 1.8vw;
 
 	input {
-		width: 2.6vw;
+    display: block;
+    margin: .3vw auto;
+    width: 2.6vw;
 		padding: .2vw;
 		font-size: 1.5vw;
 	}
 
 	button {
-		display: block;
-		margin: 3vw auto;
+		margin: .3vw auto;
+    font-size: 1vw;
+    padding: .3vw .4vw;
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    display: block;
+    
+    &:hover {
+      border-color: #888;
+      background-color: #ddd;
+    }
 	}
 	.hint {
 		border: {
@@ -24,17 +39,18 @@
 		padding: .5vw;
 		background-color: #eee;
 		color: #555;
-		display: inline-block;
+    margin: auto;
 	}
+  
+  .invisible {
+    display: none;
+  }
+
+}
 
 	.invisible {
 		display: none;
 	}
-
-
-
-
-}
 
 
 .container-center {

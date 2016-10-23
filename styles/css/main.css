@@ -1,15 +1,29 @@
+body {
+  font-family: sans-serif;
+}
+
 .page1 {
   text-align: center;
   font-size: 1.8vw;
 }
 .page1 input {
+  display: block;
+  margin: .3vw auto;
   width: 2.6vw;
   padding: .2vw;
   font-size: 1.5vw;
 }
 .page1 button {
+  margin: .3vw auto;
+  font-size: 1vw;
+  padding: .3vw .4vw;
+  background-color: #ccc;
+  border: 1px solid #aaa;
   display: block;
-  margin: 3vw auto;
+}
+.page1 button:hover {
+  border-color: #888;
+  background-color: #ddd;
 }
 .page1 .hint {
   border-radius: 5px;
@@ -21,9 +35,13 @@
   padding: .5vw;
   background-color: #eee;
   color: #555;
-  display: inline-block;
+  margin: auto;
 }
 .page1 .invisible {
+  display: none;
+}
+
+.invisible {
   display: none;
 }
 
